@@ -109,4 +109,18 @@ $(() => {
             localStorage.setItem('mode', 'day')
         }
     })
+
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+        if ($('#mode').hasClass('day')) {
+            $('#mode').addClass('night')
+            $('#mode').removeClass('day')
+            $('#memu').text('☀')
+            localStorage.setItem('mode', 'night')
+        } else {
+            $('#mode').addClass('day')
+            $('#mode').removeClass('night')
+            $('#memu').text('🌙')
+            localStorage.setItem('mode', 'day')
+        }
+    })
 })
