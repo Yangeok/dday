@@ -14,13 +14,13 @@ function generateOutput({ text, name }, calculated) {
 
     switch (true) {
         case (calculated < 0):
-            result = 'D-' + String(calculated * -1)
+            result = 'D+' + String(calculated * -1)
             break
         case (calculated === 0):
             result = 'D-Day'
             break
         case (calculated > 0):
-            result = 'D+' + String(calculated)
+            result = 'D' + String(calculated * -1)
             break
     }
 
