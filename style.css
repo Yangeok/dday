@@ -56,14 +56,22 @@ body {
     display: inline-block;
 }
 
-.memu {
+.setting {
+    font-size: 30px;
+    position: fixed;
+    left: 10px;
+    bottom: -40px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.menu {
     font-size: 30px;
     position: fixed;
     right: 10px;
     bottom: -40px;
     transition: 0.5s;
     cursor: pointer;
-
 }
 
 .show {
@@ -80,4 +88,21 @@ a {
 a:hover {
     text-decoration: underline;
     color: unset;
+}
+
+.container.left {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    height: 100%;
+    width: 50%;
+}
+
+.container.right {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    height: 100%;
+    width: 50%;
 }
